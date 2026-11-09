@@ -1,0 +1,5 @@
+# Platform
+.DS_Store
+
+# Development
+dist/

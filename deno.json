@@ -1,0 +1,27 @@
+{
+    "name": "plethora",
+    "version": "0.1.0",
+    "exports": "./src/main.ts",
+    "desktop": {
+        "app": {
+            "name": "Plethora",
+            "identifier": "com.jleskey.plethora"
+        },
+        "output": {
+            "macos": "./dist/Plethora.app",
+            "windows": "./dist/Plethora",
+            "linux": "./dist/plethora"
+        }
+    },
+    "tasks": {
+        "dev": "deno desktop --hmr src/main.ts",
+        "build": "deno desktop src/main.ts"
+    },
+    "fmt": {
+        "indentWidth": 4,
+        "singleQuote": true,
+        "useBraces": "preferNone",
+        "lineWidth": 79,
+        "exclude": [".github/"]
+    }
+}
